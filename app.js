@@ -6,8 +6,12 @@ app.get('/',(req,res) =>{
     res.render( 'index.ejs',{name:"mausooq"});
 })
 app.get('/login',(req,res) =>{
-    res.render('index.ejx')
+    res.render('login.ejx')
 })
+app.get('/register',(req,res) =>{
+    res.render('register.ejx')
+})
+
 app.listen(8080,() => {
     console.log("Server is running on port 8080");
 })
